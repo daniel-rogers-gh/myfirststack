@@ -22,3 +22,16 @@ variable "resource_group_name" {
   type        = string
   description = "The resource group where the resources will be deployed."
 }
+
+variable "client_id" {
+  type = string
+}
+
+variable "client_secret" {
+  type = string
+}
+
+variable "tenant_id" {
+  type = string
+  sensitive = true
+}
